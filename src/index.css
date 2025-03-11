@@ -8,7 +8,9 @@
 
 body {
   margin: 0;
-
+  background-image: url("https://img.freepik.com/foto-premium/la-consistenza-dello-sfondo-giallo-e-arancione_1283541-736.jpg?w=900");
+  background-repeat: no-repeat;
+  background-size: cover;
   min-height: 100vh;
 
 }
@@ -17,12 +19,21 @@ body {
 
 nav {
   text-align: center;
+  background-image: url("https://img.freepik.com/foto-premium/vista-ad-alta-angolazione-del-ragno-e-delle-luci-gialle_1048944-239378.jpg?w=1380");
+  height: 100px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .header-homeLink {
   font-size: 60px;
   text-decoration: inherit;
   margin-bottom: 30px;
+}
+
+/* regole titolo home */
+.homelist-title {
+  padding: 8px;
+  color: #c1110e;
 }
 
 /* regole container dei movies */
@@ -39,11 +50,19 @@ nav {
 .movie-card {
   width: 19%;
   padding: 4px;
-
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   /* debug */
-  background-color: aqua;
+  background-color: rgb(23, 193, 88);
   border: black 1px solid;
 }
+
+/* regole immagine film */
+.movieimage {
+  max-width: 70%;
+  margin-left: 15%;
+}
+
 
 a {
 
@@ -58,7 +77,7 @@ a:hover {
 
 /* regole titolo in home */
 .movietitle {
-  color: red;
+  color: rgb(121, 14, 14);
 }
 
 /* regole bottone per accedere a pagina dettagli */
@@ -86,11 +105,25 @@ a:hover {
 
 .moviecard-detail-container {
   width: 70%;
+  margin-top: 30px;
   margin-left: 15%;
-  /* debug */
-  background-color: aqua;
+  background-color: rgb(23, 193, 88);
   border: black 1px solid;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  padding: 8px;
 
+}
+
+.moviecard-detail-title {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: bold;
+}
+
+.movieimage-detail {
+  max-width: 50%;
+  margin-left: 25%;
 }
 
 

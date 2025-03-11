@@ -5,6 +5,7 @@ import MovieCard from "../components/MovieCard"
 const HomePageFilms = () => {
     return (
         <>
+            <h1 className="homelist-title">Lista film preferiti della community!</h1>
             <div className="movies-container">
                 <MovieCard />
                 <MovieCard />

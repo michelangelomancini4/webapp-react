@@ -6,9 +6,12 @@ const MovieDetails = () => {
     return (
         <>
             <div className="moviecard-detail-container">
-                <h1>titolo moviecard</h1>
-                <label >Regista:</label>
-                <p>voto: davvero un bel film</p>
+                <h1 className="moviecard-detail-title">titolo moviecard</h1>
+                <img className="movieimage-detail" src="./../../public/moviescover/defaultimage.jpg" alt="" />
+                <br />
+                <span >Regista:</span>
+                <p>abstract: davvero un bel film</p>
+                <h3>Our community reviews</h3>
                 <MovieReviewCard />
             </div>
 
