@@ -7,7 +7,7 @@ const Header = () => {
     return (
         <nav >
             <div >
-                <Link to="/" className="header-homeLink">MOVIE-APP</Link>
+                <Link to="/" className="header-homeLink">MOVIE-APP!</Link>
             </div>
         </nav>
     )
