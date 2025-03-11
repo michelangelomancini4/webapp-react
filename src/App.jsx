@@ -1,16 +1,27 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+// importo  rotte modulo react-router per la parte di gestione
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+// importo il layout base
+import DefaultLayout from "./layout/DefaultLayout"
+
+// importo homepage e MovieDetailsPage
+import HompePage from "./pages/HomePage"
+// import MovieDetailsPage from "./pages/MovieDetailsPage";
 
 function App() {
-  const [count, setCount] = useState(0)
+
+  // Definizione rotte per la webapp 
+  // route padre: DefaultLayout   -  figli: HompePage , MovieDetailsPage
 
   return (
-    <>
-      <h1>webapp reactttttttt</h1>
-
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route element={<DefaultLayout />}>
+          <Route path="/" element={<HompePage />}></Route>
+          {/* <Route path="/details" element={<MovieDetailsPage />}></Route> */}
+        </Route>
+      </Routes>
+    </BrowserRouter>
   )
 }
 
