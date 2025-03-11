@@ -5,10 +5,17 @@ import MovieCard from "../components/MovieCard"
 const HomePageFilms = () => {
     return (
         <>
-            <MovieCard />
-            <MovieCard />
-            <MovieCard />
-            <MovieCard />
+            <div className="movies-container">
+                <MovieCard />
+                <MovieCard />
+                <MovieCard />
+                <MovieCard />
+                <MovieCard />
+                <MovieCard />
+                <MovieCard />
+                <MovieCard />
+            </div>
+
         </>
     )
 }

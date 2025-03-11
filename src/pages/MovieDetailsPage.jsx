@@ -5,10 +5,13 @@ import MovieReviewCard from "../components/MovieReviewCard"
 const MovieDetails = () => {
     return (
         <>
-            <h1>titolo moviecard</h1>
-            <label >Regista:</label>
-            <p>voto: davvero un bel film</p>
-            <MovieReviewCard />
+            <div className="moviecard-detail-container">
+                <h1>titolo moviecard</h1>
+                <label >Regista:</label>
+                <p>voto: davvero un bel film</p>
+                <MovieReviewCard />
+            </div>
+
         </>
     )
 }
