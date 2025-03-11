@@ -15,7 +15,6 @@ export default function DefaultLayout() {
 
             <main>
                 <Outlet />
-                <span>ciao</span>
             </main>
         </>
     );

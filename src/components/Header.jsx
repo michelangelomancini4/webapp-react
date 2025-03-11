@@ -1,4 +1,4 @@
-// importiamo parte LInk del modulo react-router
+// importo parte LInk del modulo react-router
 import { Link } from "react-router-dom"
 
 

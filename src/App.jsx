@@ -6,7 +6,7 @@ import DefaultLayout from "./layout/DefaultLayout"
 
 // importo homepage e MovieDetailsPage
 import HompePage from "./pages/HomePage"
-// import MovieDetailsPage from "./pages/MovieDetailsPage";
+import MovieDetailsPage from "./pages/MovieDetailsPage";
 
 function App() {
 
@@ -18,7 +18,7 @@ function App() {
       <Routes>
         <Route element={<DefaultLayout />}>
           <Route path="/" element={<HompePage />}></Route>
-          {/* <Route path="/details" element={<MovieDetailsPage />}></Route> */}
+          <Route path="/details" element={<MovieDetailsPage />}></Route>
         </Route>
       </Routes>
     </BrowserRouter>
