@@ -63,8 +63,8 @@ const MovieDetails = () => {
         <>
             {/* logica per gestire visualizzazione film/serie precedente o successiva */}
             < div className="prevnext" >
-                <Link to={`http://localhost:5173/movie/${id - 1}`} className='prevnext' >&#8678;  PREV- </Link>
-                <Link to={`http://localhost:5173/movie/${parseInt(id) + 1}`} className='prevnext' >-NEXT &#8680;</Link>
+                <Link to={id > 1 ? `http://localhost:5173/movie/${id - 1}` : ''} className='prevnext' >&#8678;  PREV- </Link>
+                <Link to={id < 5 ? `http://localhost:5173/movie/${parseInt(id) + 1}` : ''} className='prevnext' >-NEXT &#8680;</Link>
             </div >
             <div className="moviecard-detail-container">
                 <div className="card-detailcontainer">
