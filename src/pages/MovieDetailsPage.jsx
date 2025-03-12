@@ -52,7 +52,7 @@ const MovieDetails = () => {
         <>
             <div className="moviecard-detail-container">
                 <h1 className="moviecard-detail-title">{movieDetailsState.title}</h1>
-                <img className="movieimage-detail" src="./../../public/moviescover/defaultimage.jpg" alt={movieDetailsState.title} />
+                <img className="movieimage-detail" src={movieDetailsState.image} alt={movieDetailsState.title} />
                 <br />
                 <span><strong>Regista:</strong>{movieDetailsState.director}</span>
                 <p><strong>abstract:</strong> {movieDetailsState.abstract} </p>

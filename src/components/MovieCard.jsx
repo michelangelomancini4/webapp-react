@@ -12,8 +12,8 @@ export default function MovieCard({ movieProps }) {
         <>
             <div className="movie-card">
 
-                <img className="movieimage" src={movieProps.image} alt="" />
                 <h2 className="movietitle">{movieProps.title}</h2>
+                <img className="movieimage" src={movieProps.image} alt={movieProps.title} />
                 <label ><strong>Regista:</strong>{movieProps.director}</label>
                 <p><strong>Plot:</strong> {movieProps.abstract} </p>
                 <Link to={`/movie/${id}`}> <button className="seemore-button" >dettagli..</button > </Link>
