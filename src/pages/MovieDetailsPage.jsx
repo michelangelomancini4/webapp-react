@@ -37,12 +37,12 @@ const MovieDetails = () => {
     // funzione di rendering
     const renderMovieDetails = () => {
 
-        // mappo movieDetailsState per generare la card con i dati del film
+        // mappo movieDetailsState per generare la card con i dati del film (movieDetailCard) che passerò come prop a MovieReviewCard
         return movieDetailsState.reviews?.map(
             movieDetailCard => {
                 return (
 
-                    <MovieReviewCard key={movieDetailCard.id} />
+                    <MovieReviewCard key={movieDetailCard.id} MovieDetailsProp={movieDetailCard} />
                 )
             }
         )
