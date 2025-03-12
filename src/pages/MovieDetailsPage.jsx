@@ -79,8 +79,9 @@ const MovieDetails = () => {
                     </section>
 
                 </div>
+                <h3>Our community reviews</h3>
                 <div className="reviewcontainer">
-                    <h3>Our community reviews</h3>
+
                     {renderMovieDetails()}
                 </div>
 
