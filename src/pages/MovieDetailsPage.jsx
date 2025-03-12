@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import axios from "axios";
 
 
@@ -15,6 +15,10 @@ const MovieDetails = () => {
     // destructuring variabili di stato
     const [movieDetailsState, setMovieDetailsState] = useState({});
 
+    // associo useNavigate a 'redirect'
+    const redirect = useNavigate();
+
+
     // effettuo la chiamata  API al backend per ottenere i dati aiutandomi con l'id 
     function fetchmovieDetails() {
         axios
@@ -27,7 +31,12 @@ const MovieDetails = () => {
             })
 
             // In caso di errore stampo in console un messaggio
-            .catch((err) => console.error("Errore nel recupero dei post:", err));
+            .catch(err => {
+                console.log(err);
+                if (err.status === 404) redirect("/404")
+            }
+
+            )
     }
 
     // evito il loop della funzione

@@ -4,9 +4,11 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 // importo il layout base
 import DefaultLayout from "./layout/DefaultLayout"
 
-// importo homepage e MovieDetailsPage
+// importo homepage , MovieDetailsPage e NotFoundPage
 import HompePage from "./pages/HomePage"
 import MovieDetailsPage from "./pages/MovieDetailsPage";
+import NotFoundPage from './pages/NotFoundPage';
+
 
 function App() {
 
@@ -19,6 +21,7 @@ function App() {
         <Route element={<DefaultLayout />}>
           <Route path="/" element={<HompePage />}></Route>
           <Route path="/movie/:id" element={<MovieDetailsPage />}></Route>
+          <Route path="*" element={<NotFoundPage />} />
         </Route>
       </Routes>
     </BrowserRouter>
