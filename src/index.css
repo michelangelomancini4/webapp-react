@@ -113,6 +113,18 @@ a:hover {
 }
 
 /* regole pagina dettagli  */
+.prevnext {
+  text-align: end;
+  margin-right: 30px;
+  font-size: 20px;
+  text-decoration: inherit;
+  font-weight: bold;
+  color: #c1110e;
+}
+
+.prevnext :hover {
+  color: blueviolet;
+}
 
 .moviecard-detail-container {
   width: 70%;
