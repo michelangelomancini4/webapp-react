@@ -37,7 +37,7 @@ const HomePageMovies = () => {
             movie => {
                 return (
 
-                    <MovieCard key={movie.id} />
+                    <MovieCard key={movie.id} movieProps={movie} />
                 )
             }
         )

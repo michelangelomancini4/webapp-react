@@ -1,17 +1,23 @@
 // importiamo parte LInk del modulo react-router
 import { Link } from "react-router-dom"
 
-// creazione card 
-export default function MovieCard() {
+// creazione card del film con prop ricevuta da HomePage.jsx 
+export default function MovieCard({ movieProps }) {
+
+
+    // destructuring per usare i dati nell'output
+    const { id, title, director, abstract, image } = movieProps;
 
     return (
         <>
             <div className="movie-card">
-                <img className="movieimage" src="./../../public/moviescover/defaultimage.jpg" alt="" />
-                <h2 className="movietitle">titolo moviecard</h2>
-                <label ><strong>Regista:</strong>Stanley Kubrick</label>
-                <p><strong>abstract:</strong> Arancia meccanica - A Clockwork Orange è un film del 1971 scritto, diretto e prodotto da Stanley Kubrick. </p>
-                <Link to="/details"> <button className="seemore-button" >dettagli..</button > </Link>
+
+                <img className="movieimage" src={movieProps.image} alt="" />
+                <h2 className="movietitle">{movieProps.title}</h2>
+                <label ><strong>Regista:</strong>{movieProps.director}</label>
+                <p><strong>Plot:</strong> {movieProps.abstract} </p>
+                <Link to={`/movie/${id}`}> <button className="seemore-button" >dettagli..</button > </Link>
+
             </div>
 
         </>
