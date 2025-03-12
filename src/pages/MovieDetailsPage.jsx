@@ -60,13 +60,18 @@ const MovieDetails = () => {
     return (
         <>
             <div className="moviecard-detail-container">
-                <h1 className="moviecard-detail-title">{movieDetailsState.title}</h1>
-                <img className="movieimage-detail" src={movieDetailsState.image} alt={movieDetailsState.title} />
-                <br />
-                <span><strong>Regista:</strong>{movieDetailsState.director}</span>
-                <p><strong>abstract:</strong> {movieDetailsState.abstract} </p>
-                <h3>Our community reviews</h3>
-                {renderMovieDetails()}
+                <div className="card-detailcontainer">
+                    <h1 className="moviecard-detail-title">{movieDetailsState.title}</h1>
+                    <img className="movieimage-detail" src={movieDetailsState.image} alt={movieDetailsState.title} />
+                    <br />
+                    <span><strong>Regista:</strong>{movieDetailsState.director}</span>
+                    <p><strong>abstract:</strong> {movieDetailsState.abstract} </p>
+                </div>
+                <div className="reviewcontainer">
+                    <h3>Our community reviews</h3>
+                    {renderMovieDetails()}
+                </div>
+
             </div>
 
         </>
