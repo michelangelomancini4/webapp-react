@@ -112,7 +112,8 @@ a:hover {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-/* regole pagina dettagli  */
+/* regole movie details */
+/* regole tasti prev e next */
 .prevnext {
   text-align: end;
   margin-right: 30px;
@@ -126,6 +127,8 @@ a:hover {
   color: blueviolet;
 }
 
+/* regole macro-container generale */
+
 .moviecard-detail-container {
   width: 70%;
   margin-top: 30px;
@@ -137,25 +140,38 @@ a:hover {
 
 }
 
+
+.moviecard-detail-container strong {
+  color: #373d07;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* regole titolo film */
+
 .moviecard-detail-title {
   text-align: center;
   margin-bottom: 15px;
   font-size: bold;
+  color: brown;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+/* regole cover del film */
 .movieimage-detail {
   max-width: 40%;
   margin-left: 25%;
   margin-bottom: 21px;
 }
 
+/* regole container di sinistra con immagine -regista- abstract */
 .card-detailcontainer {
   background-color: rgb(24, 234, 104);
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  /* display: flex; */
 }
 
+/* regole container di destra con le recensioni */
 .reviewcontainer {
   background-color: rgb(3, 218, 85);
   border-radius: 12px;

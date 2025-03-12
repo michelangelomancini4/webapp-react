@@ -6,9 +6,9 @@ const MovieReview = ({ MovieDetailsProp }) => {
 
     return (
         <>
-            <p> {MovieDetailsProp.text || 'No descriptions avaible!'}</p>
+            <p><strong>Recensione:</strong> {MovieDetailsProp.text || 'No descriptions avaible!'}</p>
             <p><strong>Voto:</strong>{MovieDetailsProp.vote || 'Not reviewd'}</p>
-            <label>Review by:{MovieDetailsProp.name || 'Anonymous'}</label>
+            <label><strong>Review by:</strong>{MovieDetailsProp.name || 'Anonymous'}</label>
         </>
     )
 }

@@ -68,11 +68,16 @@ const MovieDetails = () => {
             </div >
             <div className="moviecard-detail-container">
                 <div className="card-detailcontainer">
-                    <h1 className="moviecard-detail-title">{movieDetailsState.title}</h1>
-                    <img className="movieimage-detail" src={movieDetailsState.image} alt={movieDetailsState.title} />
-                    <br />
-                    <span><strong>Regista:</strong>{movieDetailsState.director}</span>
-                    <p><strong>abstract:</strong> {movieDetailsState.abstract} </p>
+                    <section>
+                        <h1 className="moviecard-detail-title">{movieDetailsState.title}</h1>
+                        <img className="movieimage-detail" src={movieDetailsState.image} alt={movieDetailsState.title} />
+                    </section>
+
+                    <section>
+                        <span><strong>Regista:</strong>{movieDetailsState.director}</span>
+                        <p><strong>abstract:</strong> {movieDetailsState.abstract} </p>
+                    </section>
+
                 </div>
                 <div className="reviewcontainer">
                     <h3>Our community reviews</h3>
