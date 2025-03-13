@@ -8,9 +8,11 @@
 
 body {
   margin: 0;
-  background-image: url("https://img.freepik.com/foto-premium/la-consistenza-dello-sfondo-giallo-e-arancione_1283541-736.jpg?w=900");
+  background-image: url("https://img.freepik.com/free-photo/vivid-blurred-colorful-wallpaper-background_58702-2421.jpg?t=st=1741876775~exp=1741880375~hmac=e3948c9741cd6572b4164500f14bd892a5fe55e2d4ba73738ddfdd034655aa8a&w=1380");
   background-repeat: no-repeat;
   background-size: cover;
+  /* background: linear-gradient(135deg, #a4e205, #e4aa09); */
+
   min-height: 100vh;
 
 }
@@ -19,9 +21,9 @@ body {
 
 nav {
   text-align: center;
-  background-image: url("https://img.freepik.com/foto-premium/vista-ad-alta-angolazione-del-ragno-e-delle-luci-gialle_1048944-239378.jpg?w=1380");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: transparent;
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
   height: 110px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   position: sticky;
@@ -29,6 +31,7 @@ nav {
   top: 0;
   right: 0;
   right: calc(100vw - 110px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 /* regole logo header */
@@ -44,7 +47,7 @@ nav {
 /* regole titolo home */
 .homelist-title {
   padding: 8px;
-  color: #c1110e;
+  color: gold;
 
 }
 
