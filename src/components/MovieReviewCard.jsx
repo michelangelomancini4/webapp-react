@@ -9,7 +9,7 @@ const MovieReview = ({ MovieDetailsProp }) => {
             <div className="singlereview-container">
                 <label ><strong>Review by:</strong>{MovieDetailsProp.name || 'Anonymous'}</label>
                 <p className="vote"><strong>Voto:</strong>{MovieDetailsProp.vote || 'Not reviewd'}</p>
-                <p><strong>Recensione:</strong> {MovieDetailsProp.text || 'No descriptions avaible!'}</p>
+                <p><strong>Recensione:</strong> {MovieDetailsProp.text || 'No descriptions aviable!'}</p>
             </div>
 
         </>

@@ -8,6 +8,9 @@ import { Link } from "react-router-dom";
 // importo le recensioni da aggiungere alla pagina dei dettagli del film
 import MovieReviewCard from "../components/MovieReviewCard"
 
+// import del componente di form
+import ReviewForm from './../components/ReviewForm';
+
 // creo funzione che mi ritorni scheda dei dettagli del film
 const MovieDetails = () => {
 
@@ -79,14 +82,15 @@ const MovieDetails = () => {
                     </section>
 
                 </div>
-                <h3>Our community reviews</h3>
                 <div className="reviewcontainer">
-
+                    <h3>Our community reviews</h3>
                     {renderMovieDetails()}
                 </div>
 
             </div>
-
+            <div>
+                <ReviewForm movie_id={movieDetailsState.id} />
+            </div>
         </>
     )
 }
