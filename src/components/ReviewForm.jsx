@@ -47,23 +47,20 @@ const ReviewForm = ({ movie_id, fetchmovieDetails }) => {
     }
 
     return (
-        <div >
+        <div className="review-form-container" >
             <header >
                 <h5>Aggiungi la tua review!</h5>
             </header>
             <div >
                 <form onSubmit={submitReview}>
                     <div >
-                        <label>Nome</label>
-                        <input type="text" name="name" value={formData.name} onChange={setFieldValue} />
+                        <input type="text" name="name" value={formData.name} onChange={setFieldValue} placeholder="Nome" />
                     </div>
                     <div >
-                        <label>Recensione:</label>
-                        <textarea name="text" value={formData.text} onChange={setFieldValue} ></textarea>
+                        <textarea name="text" value={formData.text} onChange={setFieldValue} placeholder="Scrivi la tua recensione.."></textarea>
                     </div>
                     <div >
-                        <label>Voto:</label>
-                        <input type="number" min="1" max="5" name='vote' value={formData.vote} onChange={setFieldValue} />
+                        <input type="number" min="1" max="5" name='vote' value={formData.vote} onChange={setFieldValue} placeholder="Voto" />
                     </div>
                     <div >
                         <button type="submit" >

@@ -229,6 +229,49 @@ a:hover {
   color: #d5df11;
 }
 
+/* regole sezione input utente */
+.review-form-container {
+  background: linear-gradient(0deg, #18b359, #28a38a);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+.review-form-container input,
+.review-form-container textarea {
+
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
+/* regole textarea del submit */
+.review-form-container textarea {
+  min-height: 130px;
+  width: 90%;
+  margin-top: 2%;
+}
+
+
+/* regole bottone submit */
+.review-form-container button {
+  margin-top: 2%;
+  margin-left: 70%;
+  background-color: #a9e20c;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.review-form-container button:hover {
+  background-color: #0056b3;
+}
+
 .moviecard-detail-container h3 {}
 
 /* 404 page */
