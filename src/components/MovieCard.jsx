@@ -8,6 +8,8 @@ export default function MovieCard({ movieProps }) {
     // destructuring per usare i dati nell'output
     const { id, title, director, abstract, image } = movieProps;
 
+
+
     return (
         <>
             <div className="movie-card">

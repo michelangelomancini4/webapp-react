@@ -48,6 +48,7 @@ const MovieDetails = () => {
     useEffect(fetchmovieDetails, [id]);
 
 
+
     // funzione di rendering
     const renderMovieDetails = () => {
 

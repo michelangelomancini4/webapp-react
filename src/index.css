@@ -124,7 +124,7 @@ a:hover {
 
 
 
-/* regole movie details */
+/* regole movie details page */
 /* regole tasti prev e next */
 .prevnext {
   text-align: end;
@@ -159,6 +159,20 @@ a:hover {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* regole container di sinistra con immagine -regista- abstract */
+.card-detailcontainer {
+  background: linear-gradient(135deg, #16a085, #2ecc71);
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  width: 40%;
+}
+
+.card-detailcontainer:hover {
+  background: linear-gradient(135deg, #2ecc71, #16a085);
+
+
+}
+
 /* regole titolo film */
 
 .moviecard-detail-title {
@@ -176,29 +190,17 @@ a:hover {
   margin-bottom: 21px;
 }
 
-/* regole container di sinistra con immagine -regista- abstract */
-.card-detailcontainer {
-  background: linear-gradient(135deg, #16a085, #2ecc71);
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-  width: 40%;
-}
 
-.card-detailcontainer:hover {
-  background: linear-gradient(135deg, #2ecc71, #16a085);
-
-
-}
 
 /* regole container di destra con le recensioni */
 .reviewcontainer {
   max-height: fit-content;
-  margin-top: 5%;
+  margin-top: 1%;
   margin-left: 50px;
   width: 50%;
   /* padding: 14px; */
-  display: flex;
-  gap: 30px;
+  /* display: flex;
+  gap: 30px; */
 }
 
 .singlereview-container {
@@ -218,6 +220,10 @@ a:hover {
 
 .vote {
   margin-left: 10%;
+}
+
+.fa-star {
+  color: #d5df11;
 }
 
 .moviecard-detail-container h3 {}
