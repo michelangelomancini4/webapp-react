@@ -19,7 +19,7 @@ body {
 
 /* regole header */
 
-nav {
+header {
   text-align: center;
   background: transparent;
   background-color: rgba(0, 0, 0, 0.2);
@@ -47,7 +47,10 @@ nav {
 /* regole titolo home */
 .homelist-title {
   padding: 8px;
-  color: gold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-align: center;
 
 }
 
@@ -130,16 +133,26 @@ a:hover {
 /* regole movie details page */
 /* regole tasti prev e next */
 .prevnext {
-  text-align: end;
-  margin-right: 30px;
+  display: inline-block;
+  /* Rende i link dei blocchi */
+  padding: 5px 10px;
+  margin-left: 10px;
+  margin-top: 10px;
   font-size: 20px;
-  text-decoration: inherit;
   font-weight: bold;
-  color: #c1110e;
+  color: #dff51e;
+  background-color: transparent;
+  border: 1px solid #39ad13;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.prevnext :hover {
-  color: blueviolet;
+.prevnext:hover {
+  background: linear-gradient(135deg, #16a085, #2ecc71);
+  color: white;
+  transform: translateY(-2px);
 }
 
 /* regole macro-container generale */
@@ -160,6 +173,7 @@ a:hover {
 .moviecard-detail-container strong {
   color: #373d07;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-right: 10px;
 }
 
 /* regole container di sinistra con immagine -regista- abstract */
@@ -172,7 +186,6 @@ a:hover {
 
 .card-detailcontainer:hover {
   background: linear-gradient(135deg, #2ecc71, #16a085);
-
 
 }
 
@@ -222,7 +235,7 @@ a:hover {
 }
 
 .vote {
-  margin-left: 10%;
+  margin-left: 40%;
 }
 
 .fa-star {
@@ -272,7 +285,11 @@ a:hover {
   background-color: #0056b3;
 }
 
-.moviecard-detail-container h3 {}
+#submit-title {
+  text-align: center;
+  margin: 25px 0;
+  font-size: 1.7em;
+}
 
 /* 404 page */
 .notfoundpage {

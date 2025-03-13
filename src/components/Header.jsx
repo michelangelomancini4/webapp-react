@@ -5,11 +5,11 @@ import { Link } from "react-router-dom"
 const Header = () => {
 
     return (
-        <nav >
+        <header >
             <div >
                 <Link to="/" className="header-homeLink">MOVIE-APP!</Link>
             </div>
-        </nav>
+        </header>
     )
 
 }
