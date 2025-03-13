@@ -89,7 +89,7 @@ const MovieDetails = () => {
 
             </div>
             <div>
-                <ReviewForm movie_id={movieDetailsState.id} />
+                <ReviewForm movie_id={movieDetailsState.id} fetchmovieDetails={fetchmovieDetails} />
             </div>
         </>
     )

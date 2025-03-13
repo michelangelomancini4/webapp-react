@@ -4,7 +4,8 @@ import axios from "axios";
 // importo useState per salvare info immesse dall'utente
 import { useState } from "react";
 
-const ReviewForm = ({ movie_id }) => {
+
+const ReviewForm = ({ movie_id, fetchmovieDetails }) => {
 
     // imposto valori iniziali da aggiornare nello usestate
     const initialState = { name: "", text: "", vote: 1 };
@@ -35,7 +36,9 @@ const ReviewForm = ({ movie_id }) => {
                 () => {
 
                     // svuoto il form dopo l'invio
-                    setFormData(initialState)
+                    setFormData(initialState);
+                    // aggiorno in pagina la review
+                    fetchmovieDetails()
                 }
             )
             .catch(err => console.log(err)
