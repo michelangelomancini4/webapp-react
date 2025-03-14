@@ -35,6 +35,11 @@ header {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
+header div {
+  display: flex;
+  justify-content: space-around;
+}
+
 /* regole titolo header */
 .header-homeLink {
   font-size: 60px;
@@ -42,6 +47,19 @@ header {
   margin-bottom: 30px;
   color: #f54024;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+.addmovie-button {
+  margin-top: 2%;
+  background-color: #83b105;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  text-decoration: inherit;
+  height: 35px;
+  padding: 3px;
 
 }
 

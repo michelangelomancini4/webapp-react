@@ -6,9 +6,9 @@ const Header = () => {
 
     return (
         <header >
-            <div >
+            <div>
                 <Link to="/" className="header-homeLink">MOVIE-APP!</Link>
-                <Link to="/movies/create"  >Inserisci nuovo Libro!</Link>
+                <Link to="/movies/create" className="addmovie-button" >Inserisci nuovo Libro!</Link>
             </div>
         </header>
     )
