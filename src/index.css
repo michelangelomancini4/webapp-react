@@ -6,6 +6,7 @@
 
 }
 
+/* regole generali body */
 body {
   margin: 0;
   background-image: url("https://img.freepik.com/free-photo/vivid-blurred-colorful-wallpaper-background_58702-2421.jpg?t=st=1741876775~exp=1741880375~hmac=e3948c9741cd6572b4164500f14bd892a5fe55e2d4ba73738ddfdd034655aa8a&w=1380");
@@ -17,7 +18,7 @@ body {
 
 }
 
-/* regole header */
+/* HEADER */
 
 header {
   text-align: center;
@@ -34,7 +35,7 @@ header {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-/* regole logo header */
+/* regole titolo header */
 .header-homeLink {
   font-size: 60px;
   text-decoration: inherit;
@@ -44,6 +45,7 @@ header {
 
 }
 
+/* MAIN */
 /* regole titolo home */
 .homelist-title {
   padding: 8px;
@@ -64,7 +66,7 @@ header {
   gap: 30px;
 }
 
-/* regole moviecard */
+/* regole moviecard  del singolo film*/
 .movie-card {
   width: 19%;
   padding: 4px;
@@ -104,7 +106,7 @@ a:hover {
   color: #f3ff07;
 }
 
-/* regole titolo in home */
+/* regole titolo nella moviecard */
 .movietitle {
   color: rgb(121, 14, 14);
 }
@@ -130,7 +132,8 @@ a:hover {
 
 
 
-/* regole movie details page */
+/* regole MovieDetails page */
+
 /* regole tasti prev e next */
 .prevnext {
   display: inline-block;
@@ -176,7 +179,7 @@ a:hover {
   margin-right: 10px;
 }
 
-/* regole container di sinistra con immagine -regista- abstract */
+/* regole container di sinistra con : immagine -regista- abstract */
 .card-detailcontainer {
   background: linear-gradient(135deg, #16a085, #2ecc71);
   border-radius: 12px;
@@ -234,6 +237,7 @@ a:hover {
 
 }
 
+/* regole rating */
 .vote {
   margin-left: 40%;
 }
@@ -243,6 +247,7 @@ a:hover {
 }
 
 /* regole sezione input utente */
+/* regole container form */
 .review-form-container {
   background: linear-gradient(0deg, #18b359, #28a38a);
   padding: 20px;
@@ -258,6 +263,7 @@ a:hover {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  margin-right: 10px;
 }
 
 

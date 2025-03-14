@@ -63,6 +63,7 @@ const ReviewForm = ({ movie_id, fetchmovieDetails }) => {
                         </div>
                         <div >
                             <input type="number" min="1" max="5" name='vote' value={formData.vote} onChange={setFieldValue} placeholder="Voto" />
+                            <label >Il tuo voto!</label>
                         </div>
                         <div >
                             <button type="submit" >
